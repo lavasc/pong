@@ -104,10 +104,10 @@ int main()
     ball.radius = 20;
     ball.speedX = 15;
     ball.speedY = 15;
-    player.pos = {0, screenHeigh / 2 - 60};
+    player.pos = {-5, screenHeigh / 2 - 60};
     player.size = {25, 120};
     player.speed = 14;
-    ai.pos = {screenWidth - 25, screenHeigh / 2 - 60};
+    ai.pos = {screenWidth - 20, screenHeigh / 2 - 60};
     ai.size = {25, 120};
     ai.speed = 12;
 

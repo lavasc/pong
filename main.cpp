@@ -17,16 +17,16 @@ public:
     {
         pos.x += speedX;
         pos.y += speedY;
-        if (pos.y + radius >= GetScreenHeight() || pos.y - radius <= 0)
+        if (pos.y + radius > GetScreenHeight() || pos.y - radius < 0)
         {
             speedY *= -1;
         }
-        if (pos.x + radius >= GetScreenWidth())
+        if (pos.x + radius > GetScreenWidth())
         {
             speedX *= -1;
             playerScore++;
         }
-        if (pos.x - radius <= 0)
+        if (pos.x - radius < 0)
         {
             speedX *= -1;
             AIScore++;
@@ -58,7 +58,7 @@ public:
         {
             pos.y = 0;
         }
-        if (pos.y + size.y >= GetScreenHeight())
+        if (pos.y + size.y > GetScreenHeight())
         {
             pos.y = GetScreenHeight() - size.y;
         }
@@ -78,11 +78,11 @@ public:
         {
             pos.y += speed;
         }
-        if (pos.y <= 0)
+        if (pos.y < 0)
         {
             pos.y = 0;
         }
-        if (pos.y + size.y >= GetScreenHeight())
+        if (pos.y + size.y > GetScreenHeight())
         {
             pos.y = GetScreenHeight() - size.y;
         }

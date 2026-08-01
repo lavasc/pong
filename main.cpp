@@ -96,7 +96,7 @@ AI ai;
 int main()
 {
     const int screenWidth = 1280;
-    const int screenHeigh = 800;
+    const int screenHeight = 800;
     InitWindow(screenWidth, screenHeigh, "Pong Game");
     SetTargetFPS(60);
 

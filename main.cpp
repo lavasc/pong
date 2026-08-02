@@ -97,17 +97,17 @@ int main()
 {
     const int screenWidth = 1280;
     const int screenHeight = 800;
-    InitWindow(screenWidth, screenHeigh, "Pong Game");
+    InitWindow(screenWidth, screenHeight, "Pong Game");
     SetTargetFPS(60);
 
-    ball.pos = {screenWidth / 2, screenHeigh / 2};
+    ball.pos = {screenWidth / 2, screenHeight / 2};
     ball.radius = 20;
     ball.speedX = 15;
     ball.speedY = 15;
-    player.pos = {-5, screenHeigh / 2 - 60};
+    player.pos = {-5, screenHeight / 2 - 60};
     player.size = {25, 120};
     player.speed = 14;
-    ai.pos = {screenWidth - 20, screenHeigh / 2 - 60};
+    ai.pos = {screenWidth - 20, screenHeight / 2 - 60};
     ai.size = {25, 120};
     ai.speed = 12;
 
@@ -131,7 +131,7 @@ int main()
             ball.speedX *= -1;
         }
 
-        DrawLineV({screenWidth / 2, 0}, {screenWidth / 2, screenHeigh}, WHITE);
+        DrawLineV({screenWidth / 2, 0}, {screenWidth / 2, screenHeight}, WHITE);
         ball.Draw();
         player.Draw();
         ai.Draw();
